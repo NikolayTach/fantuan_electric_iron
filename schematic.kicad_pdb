@@ -1,0 +1,12 @@
+kicad-schematic --library=kicad_pcb --symbol=SteamGenerator 
+kicad_pcb/schematic.kicad_pdb
+kicad-library --library=kicad_pcb --symbol=SwitchmodePowerSupply 
+kicad_pcb/PCB Footprint Symbol Library/switchmode_power_supply.kicad_pdb
+
+kicad-library --library=kicad_pcb --symbol=Thermocouple kicad_pcb/PCB 
+Schematics/thermocouple.kicad_pdb
+kicad-track --schematic kicad_pcb/schematic.kicad_pdb --drawing 
+--length=20mm --width=1.5mm --layer=track_layer
+
+kicad-track --schematic kicad_pcb/schematic.kicad_pdb --drawing 
+--length=30mm --width=1.5mm --layer=track_layer
