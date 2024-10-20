@@ -1,0 +1,20 @@
+kicad-pcb --library=kicad_pcb kicad_pcb/PCB.kicad_pcb
+kicad-layer --name=layer0 Copper kicad_pcb/PCB.kicad_pdb/layer0.cu
+
+kicad-layer --name=layer1 Copper kicad_pcb/PCB.kicad_pdb/layer1.cu
+
+kicad-layer --name=layer4 Solder Mask kicad_pcb/PCB.kicad_pdb/layer4.cu
+echo "Layer 0:
+    copper = true
+    silk_screen = false
+    solder_mask = false"
+
+echo "Layer 1:
+    copper = true
+    silk_screen = false
+    solder_mask = false"
+
+echo "Layer 4:
+    copper = false
+    silk_screen = false
+    solder_mask = true"
